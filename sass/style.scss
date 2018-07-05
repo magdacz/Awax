@@ -15,6 +15,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+/*HEADER*/
+
 .menu-section {
     display: flex;
     align-items: center;
@@ -61,6 +63,97 @@ body {
                 }
             }
         }
+        
+    }
+}
+
+/*HERO*/
+
+.hero {
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        
+        h1 {
+            text-transform: uppercase;
+            font-size: 72px;
+            color: #fff;
+            line-height: 69px;
+            
+            span {
+                color: #b88b58;
+            }
+        }
+        
+        h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin-top: 20px;
+            margin-bottom: 45px;
+    
+        }
+        
+        button {
+            text-transform: uppercase;
+            background: #b88b58;
+            font-size: 12px;
+            font-weight: 800;
+            color: #fff;
+            width: 197px;
+            height: 48px;
+            border: none;
+            border-radius: 20px;
+            pointer: cursor;
+        }
+    }
+    
+    .pagination {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+    
+        
+        
+        .circle {
+            width: 15px;
+            height: 15px;
+            margin: 4px;
+            border: 2px solid #b88b58;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+         .active {
+                background: #b88b58;
+        }
+     
+    }
+    
+    .telephone {
+        width: 67px;
+        height: 67px;
+        background: #b88b58;
+        border: none;
+        border-radius: 50px;
+        position: absolute;
+        left: 90%;
+        bottom: -40px;
         
     }
 }
