@@ -1,4 +1,15 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+/*
+$fontSize-third: 
+$fontSize-fourth: 
+$fontSize-fifth: */
+/*szary pod nagłówkami w sekcjach*/
+/*kolor tekstu about us*/
+/*pricing table text*/
+/*premium text*/
+/*black*/
+/*jasno-szary*/
 * {
   margin: 0;
   padding: 0;
@@ -10,106 +21,7 @@
   margin: auto;
 }
 
-body {
-  background: #000000;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/*HEADER*/
-.menu-section {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.menu-section .awax {
-  pointer: cursor;
-}
-
-.menu-section ul {
-  list-style: none;
-}
-
-.menu-section ul li {
-  display: inline-block;
-  margin-right: 25px;
-}
-
-.menu-section ul li a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 700;
-  color: #fff;
-  pointer: cursor;
-}
-
-.menu-section ul li a:after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: #b88b58;
-  display: block;
-  margin: 0 auto;
-  opacity: 0;
-  transition-timing-function: 0.6s;
-}
-
-.menu-section ul li a:hover:after {
-  opacity: 1;
-  width: 100%;
-}
-
-/*HERO*/
-.hero {
-  background-image: url(../images/hero.jpg);
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  height: 100vh;
-  min-height: 700px;
-  position: relative;
-}
-
-.hero .slogan {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.hero .slogan h1 {
-  text-transform: uppercase;
-  font-size: 72px;
-  color: #fff;
-  line-height: 69px;
-}
-
-.hero .slogan h1 span {
-  color: #b88b58;
-}
-
-.hero .slogan h2 {
-  text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 600;
-  color: #fff;
-  margin-top: 20px;
-  margin-bottom: 45px;
-}
-
-.hero .slogan button {
+.btn {
   text-transform: uppercase;
   background: #b88b58;
   font-size: 12px;
@@ -122,14 +34,116 @@ body {
   pointer: cursor;
 }
 
-.hero .pagination {
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*HEADER*/
+header {
+  background: #000000;
+}
+
+header .menu-section {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header .menu-section .awax {
+  pointer: cursor;
+}
+
+header .menu-section ul {
+  list-style: none;
+}
+
+header .menu-section ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+header .menu-section ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  pointer: cursor;
+}
+
+header .menu-section ul li a:after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #b88b58;
+  display: block;
+  margin: 0 auto;
+  opacity: 0;
+  transition-timing-function: 0.6s;
+}
+
+header .menu-section ul li a:hover:after {
+  opacity: 1;
+  width: 100%;
+}
+
+/*HERO*/
+.section-hero {
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+}
+
+.section-hero .slogan {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.section-hero .slogan h1 {
+  text-transform: uppercase;
+  font-size: 72px;
+  color: #fff;
+  line-height: 69px;
+}
+
+.section-hero .slogan h1 span {
+  color: #b88b58;
+}
+
+.section-hero .slogan h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.section-hero .pagination {
   position: absolute;
   bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.hero .pagination .circle {
+.section-hero .pagination .circle {
   width: 15px;
   height: 15px;
   margin: 4px;
@@ -138,11 +152,17 @@ body {
   display: inline-block;
 }
 
-.hero .pagination .active {
+.section-hero .pagination .active {
   background: #b88b58;
 }
 
-.hero .telephone {
+/*ABOUT US*/
+.section-about-us {
+  background: #F7F7F7;
+  position: relative;
+}
+
+.section-about-us .telephone {
   width: 67px;
   height: 67px;
   background: #b88b58;
@@ -150,6 +170,52 @@ body {
   border-radius: 50px;
   position: absolute;
   left: 90%;
-  bottom: -40px;
+  top: -35px;
+  box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+}
+
+.section-about-us h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 63px;
+  padding-bottom: 10px;
+}
+
+.section-about-us h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #aeaeae;
+  padding-bottom: 55px;
+}
+
+.section-about-us .about-us {
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.section-about-us .about-us .text-about-us {
+  width: 634px;
+  margin-left: 60px;
+}
+
+.section-about-us .about-us .text-about-us p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #242424;
+}
+
+.section-about-us .about-us .text-about-us button {
+  margin-top: 32px;
+}
+
+.section-about-us .about-us .video {
+  background-color: #AEAEAF;
+  margin-left: 30px;
+  height: 275px;
+  box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42);
 }
 /*# sourceMappingURL=style.css.map */
