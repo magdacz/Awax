@@ -6,7 +6,7 @@ $fontSize-fourth:
 $fontSize-fifth: */
 /*szary pod nagłówkami w sekcjach*/
 /*kolor tekstu about us*/
-/*pricing table text*/
+/*price table text*/
 /*premium text*/
 /*black*/
 /*jasno-szary*/
@@ -217,5 +217,76 @@ header .menu-section ul li a:hover:after {
   margin-left: 30px;
   height: 275px;
   box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42);
+}
+
+/*SERVICES*/
+.section-services {
+  background: #000000;
+}
+
+.section-services h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 63px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.section-services h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #aeaeae;
+  padding-bottom: 55px;
+}
+
+.section-services .services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-bottom: 42px;
+}
+
+.section-services .services .icons {
+  border-left: 2px solid #3A3A3A;
+  border-top: none;
+  border-bottom: none;
+  width: 281px;
+  height: 212px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.section-services .services .icons img {
+  width: 62px;
+  padding-top: 9px;
+  padding-bottom: 37px;
+}
+
+.section-services .services .icons h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.section-services .services .icons p {
+  text-align: center;
+  font-size: 12px;
+  line-height: 21px;
+  color: #7e7e7e;
+}
+
+.section-services .services .support {
+  border-right: 2px solid #3A3A3A;
 }
 /*# sourceMappingURL=style.css.map */
