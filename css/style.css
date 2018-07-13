@@ -428,4 +428,141 @@ header .menu-section ul li a:hover:after {
   margin: 0 auto;
   margin-top: 15px;
 }
+
+/*TEAM*/
+.section-team {
+  background-image: url(../images/background-team.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-team h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 63px;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.section-team h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #aeaeae;
+  padding-bottom: 55px;
+}
+
+.section-team .our-team {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.section-team .our-team .workers {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 350px;
+  height: 430px;
+  background: #fff;
+  margin: 0 20px 10px 20px;
+}
+
+.section-team .our-team .workers .workers-photo {
+  background: red;
+  border-radius: 50%;
+  width: 184px;
+  height: 183px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+}
+
+.section-team .our-team .workers .jane {
+  background: url("https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5d43ec18ec2cf6ff854513b9e8395c1e&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-team .our-team .workers .mike {
+  background: url("https://images.unsplash.com/photo-1506085452766-c330853bea50?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c90ef12b4dc22a4a4c277dd056dd0b7e&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-team .our-team .workers .anna {
+  background: url("https://images.unsplash.com/photo-1458071103673-6a6e4c4a3413?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f710e5314d91b9bb162e017463495c54&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.section-team .our-team .workers h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-team .our-team .workers p {
+  text-align: center;
+  font-size: 14px;
+  color: #7e7e7e;
+  padding-top: 5px;
+  padding-bottom: 38px;
+}
+
+.section-team .our-team .workers .social-media {
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.section-team .our-team .workers .social-media a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.section-team .our-team .workers .social-media a .fab {
+  color: #fff;
+  background: #bebebe;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.section-team .our-team .workers .social-media a .fab:hover {
+  background: #b88b58;
+}
+
+.section-team .pagination {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-team .pagination .circle {
+  width: 15px;
+  height: 15px;
+  margin: 4px;
+  border: 2px solid #b88b58;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.section-team .pagination .active {
+  background: #b88b58;
+}
 /*# sourceMappingURL=style.css.map */
