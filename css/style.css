@@ -34,6 +34,27 @@ $fontSize-fifth: */
   pointer: cursor;
 }
 
+.pagination {
+  position: absolute;
+  /*add position relative for section*/
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pagination .circle {
+  width: 15px;
+  height: 15px;
+  margin: 4px;
+  border: 2px solid #b88b58;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pagination .active {
+  background: #b88b58;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -134,26 +155,6 @@ header .menu-section ul li a:hover:after {
   color: #fff;
   margin-top: 20px;
   margin-bottom: 45px;
-}
-
-.section-hero .pagination {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.section-hero .pagination .circle {
-  width: 15px;
-  height: 15px;
-  margin: 4px;
-  border: 2px solid #b88b58;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.section-hero .pagination .active {
-  background: #b88b58;
 }
 
 /*ABOUT US*/
@@ -500,7 +501,7 @@ header .menu-section ul li a:hover:after {
 }
 
 .section-team .our-team .workers .anna {
-  background: url("https://images.unsplash.com/photo-1458071103673-6a6e4c4a3413?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f710e5314d91b9bb162e017463495c54&auto=format&fit=crop&w=1050&q=80");
+  background: url("https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
   background-position: center;
 }
@@ -546,23 +547,104 @@ header .menu-section ul li a:hover:after {
   background: #b88b58;
 }
 
-.section-team .pagination {
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
+/*HAPPY CLIENTS*/
+.section-happy-clients {
+  background: #F7F7F7;
+  position: relative;
 }
 
-.section-team .pagination .circle {
-  width: 15px;
-  height: 15px;
-  margin: 4px;
-  border: 2px solid #b88b58;
+.section-happy-clients h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 63px;
+  padding-bottom: 10px;
+}
+
+.section-happy-clients h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #aeaeae;
+  padding-bottom: 55px;
+}
+
+.section-happy-clients .clients {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 106px;
+}
+
+.section-happy-clients .clients .client {
+  background: url("https://images.pexels.com/photos/1109637/pexels-photo-1109637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 29px;
 }
 
-.section-team .pagination .active {
-  background: #b88b58;
+.section-happy-clients .clients h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.section-happy-clients .clients h3 {
+  text-transform: none;
+  font-size: 18px;
+  color: #000000;
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.section-happy-clients .clients h3 span {
+  text-transform: uppercase;
+}
+
+.section-happy-clients .clients img {
+  width: 27px;
+  height: 20px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.section-happy-clients .clients .text-clients {
+  max-width: 728px;
+}
+
+.section-happy-clients .clients .text-clients p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+/*LOGOS*/
+.section-logos {
+  border-top: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.section-logos .logos {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 56px;
+  padding-bottom: 17px;
+}
+
+.section-logos .logos .photo-logo {
+  padding: 0 39px 20px 39px;
 }
 /*# sourceMappingURL=style.css.map */
