@@ -647,4 +647,112 @@ header .menu-section ul li a:hover:after {
 .section-logos .logos .photo-logo {
   padding: 0 39px 20px 39px;
 }
+
+/*PRICE*/
+.section-price {
+  background: #EDEDED;
+}
+
+.section-price h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 63px;
+  padding-bottom: 10px;
+}
+
+.section-price h3 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  color: #aeaeae;
+  padding-bottom: 55px;
+}
+
+.section-price .price {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 52px;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.section-price .price .price-box {
+  background: #fff;
+  width: 257px;
+  height: 343px;
+  margin-bottom: 10px;
+  margin-right: 27px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.section-price .price .price-box h3 {
+  font-weight: 400;
+  color: #000000;
+  padding: 0;
+  padding-top: 33px;
+  padding-bottom: 15px;
+}
+
+.section-price .price .price-box h1 {
+  padding: 0;
+}
+
+.section-price .price .price-box h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: #aeaeae;
+  padding-bottom: 15px;
+}
+
+.section-price .price .price-box p {
+  font-size: 10px;
+  color: #7e7e7e;
+  line-height: 13px;
+  margin: 0;
+}
+
+.section-price .price .price-box p:after {
+  content: "";
+  height: 1px;
+  width: 10px;
+  background-color: #b88b58;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.section-price .price .price-box p:last-of-type:after {
+  display: none;
+}
+
+.section-price .price .price-box .btn-price {
+  text-transform: uppercase;
+  background: #373737;
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  width: 129px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  pointer: cursor;
+  margin-top: 26px;
+  transition: 0.5s;
+}
+
+.section-price .price .price-box .btn-price:hover {
+  background: #b88b58;
+}
 /*# sourceMappingURL=style.css.map */

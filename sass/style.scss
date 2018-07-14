@@ -6,6 +6,7 @@ $fontSize-primary: 30px;
 $fontSize-second: 14px;
 $fontSize-third: 18px;
 $fontSize-fourth: 12px;
+$fontSize-fifth: 10px;
 /*
 $fontSize-third: 
 $fontSize-fourth: 
@@ -631,6 +632,102 @@ header {
         }
       
     }
+}
+
+/*PRICE*/
+
+.section-price {
+    background: #EDEDED;
+    
+    
+    h1 {
+        @include header1;
+    }
+    
+    h3 {
+        @include header3;
+    }
+    
+    .price {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 52px;
+        border-bottom: 1px solid #cfcfcf;
+    
+        .price-box {
+            background: $color-primary;
+            width: 257px;
+            height: 343px;
+            margin-bottom: 10px;
+            margin-right: 27px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+            h3 {
+                font-weight: 400;
+                color: $color-background;
+                padding: 0;
+                padding-top: 33px;
+                padding-bottom: 15px;
+            }
+            
+            h1 {
+                padding: 0;
+            }
+            
+            h4 {
+                @include headers;
+                font-size: $fontSize-fifth;
+                font-weight: 400;
+                color: $color-third;
+                padding-bottom: 15px;
+            }
+            
+            p {
+                font-size: $fontSize-fifth;
+                color: $color-fifth;
+                line-height: 13px;
+                margin:0;
+                
+                &:after {
+                    content: "";
+                    height: 1px;
+                    width: 10px;
+                    background-color: $color-second;
+                    margin: auto;
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    display:block;
+                }
+                
+                &:last-of-type:after {
+                display: none;
+                }              
+            }
+            
+            .btn-price {
+                text-transform: uppercase;
+                background: #373737; 
+                font-size: 12px;
+                font-weight: 800;
+                color: #fff;
+                width: 129px;
+                height: 45px;
+                border: none;
+                border-radius: 20px;
+                pointer: cursor;
+                margin-top: 26px;
+                transition: 0.5s;
+                
+                &:hover {
+                    background: #b88b58;
+                }
+            }
+        }
+    }
+    
 }
 
 
