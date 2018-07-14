@@ -537,8 +537,6 @@ header {
                         &:hover {
                             background: $color-second;
                         }
-                        
-                       
                     }
                 }
             }
@@ -666,6 +664,10 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            
+            &:last-of-type {
+                margin-right: 0;
+            }
         
             h3 {
                 font-weight: 400;
@@ -841,9 +843,150 @@ header {
         margin-right: 50%;
         display: block;
         }
+}
+
+/*SOME FACTS*/
+
+.section-facts {
+    background: $color-background;
     
+    h1 {
+        @include header1b;
+    }
     
+    h3 {
+        @include header3;
+    }
     
+    .facts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-around;
+        
+        .content-facts {
+            text-align: center;
+             width: 186px;
+            height: 171px;
+            position: relative;
+            margin-bottom: 81px;
+            margin-right: 100px;
+            
+            &:last-of-type {
+                margin-right: 0;
+            }
+            
+            h1 {
+                color: $color-second;
+                font-size: 48px;
+                font-weight: 700;
+                padding: 0;
+
+                &:after {
+                        content: "";
+                        height: 3px;
+                        width: 20px;
+                        background-color: $color-fifth;
+                        margin: auto;
+                        margin-top: 3px;
+                        margin-bottom: 5px;
+                        display:block;
+                    }
+            }
+            
+            h2 {
+                @include headers;
+                font-size: $fontSize-third;
+                color: $color-primary;
+            }
+            
+            p {
+                font-size: $fontSize-fourth;
+                line-height: 21px;
+                color: $color-fifth;
+                bottom: 5px;
+                position: absolute;
+            }
+        }
+    }
+    
+    .tell-about-us {
+        background: $color-primary;
+        
+        .tell-about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 22px;
+            border-bottom: 1px solid #cfcfcf;
+            
+            img {
+                width: 23px;
+                height: 25px;
+            }
+            
+            h3 {
+                text-transform: uppercase;
+                font-size: $fontSize-second;
+                font-weight: 600;
+                color: $color-third;
+                padding-bottom: 0;
+                margin-right: 61px;
+                margin-left: 14px;
+                }  
+            
+            .box-media {
+                display: flex;
+                
+                .facts-media {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 34px;
+                    
+                    a {
+                        text-decoration: none;
+                        margin-left: 5px;
+                        margin-right: 4px;
+
+                        .fab {
+                            color: $color-primary;
+                            border-radius: 50%;
+                            width: 36px;
+                            height: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                        }
+                    }
+
+                    p {
+                        font-size: $fontSize-fifth;
+                        color: $color-third;
+                    }
+                }
+                
+                .fa-twitter {
+                    background: #34C5F0;
+                }
+                
+                .fa-linkedin-in {
+                    background: #127CB4;
+                }
+                
+                .fa-facebook-f {
+                    background: #336297;
+                }
+                
+                .fa-google-plus-g {
+                    background: #E74237;
+                }
+                
+                .fa-pinterest-p {
+                    background: #B71C29;
+                }
+            }
+        }
+    }
 }
 
 
