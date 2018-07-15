@@ -1063,7 +1063,7 @@ header {
             margin-bottom: 40px;
             padding-top: 54px;
             padding-bottom: 68px;
-            margin-left: 263px;
+            margin-left: 263px; 
             
             .box {
                 display: flex;
@@ -1095,6 +1095,114 @@ header {
     }
 }
 
+/*FOOTER*/
+
+footer {
+    background: $color-background;
+    padding-top: 30px;
+    padding-bottom: 31px;
+    position: relative;
+    
+    .up {
+        width: 67px;
+        height: 67px;
+        background: #b88b58;
+        border: none;
+        border-radius: 50px;
+        position: absolute;
+        right: 90%;
+        top: -35px;
+        box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        
+        .box {
+            width: 355px;
+            height: 201px;
+        }
+        
+        .footer-social {
+            position: relative;
+            margin-right: 30px;
+            
+            .footer-media {
+                
+                   a {
+                    text-decoration: none;
+                    margin-left: 3px;
+                    
+                    .fab {
+                        color: $color-primary;
+                        background: #373737;
+                        border-radius: 50%;
+                        width: 36px;
+                        height: 36px;
+                        line-height: 36px;
+                        text-align: center;
+                        transition: 0.5s;
+                        
+                        &:hover {
+                            background: $color-second;
+                        }
+                    }
+                }
+            }
+            
+            p {
+                text-transform: uppercase;
+                font-size: $fontSize-second;
+                color: $color-primary;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+        
+        .footer-text {
+            margin-right: 30px;
+            p {
+                font-size: $fontSize-fourth;
+                color: $color-fifth;
+                line-height: 21px;
+            }
+        }
+        
+        .subscribe {
+            background: #373737;
+            width: 353px;
+
+            input {
+                background: inherit;
+                font-size: 13px;
+                text-align: center;
+                text-transform: uppercase;
+                width: 220px;
+                margin: 0 auto;
+                display: block;
+                border: none;
+                border-bottom: 2px solid #a4a4a4;
+                padding-bottom: 13px;
+                margin-left: 65px;
+                margin-right: 65px;
+                margin-top: 48px;
+                margin-bottom: 25px;
+            }
+            
+            ::placeholder {
+                color: #9e9e9e;
+            }
+            
+            button {
+                margin: auto;
+                display: block;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}
 
 
 
