@@ -339,7 +339,7 @@ header {
         border: 1px solid #cfcfcf;
         border-radius: 40px;
         background: #ededed;
-        width: 720px;
+        max-width: 720px;
         height: 62px;
         text-align: center;
         margin: auto;
@@ -912,6 +912,7 @@ header {
     
     .tell-about-us {
         background: $color-primary;
+        border-bottom: 1px solid #cfcfcf;
         
         .tell-about {
             display: flex;
@@ -919,7 +920,6 @@ header {
             justify-content: center;
             padding-top: 20px;
             padding-bottom: 22px;
-            border-bottom: 1px solid #cfcfcf;
             
             img {
                 width: 23px;
@@ -984,6 +984,112 @@ header {
                 .fa-pinterest-p {
                     background: #B71C29;
                 }
+            }
+        }
+    }
+}
+
+/*CONTACT US*/
+
+.section-contact {
+     background: $color-background2;
+    
+    h1 {
+        @include header1;
+    }
+    
+    h3 {
+        @include header3;
+    }
+    
+    .contact {
+       
+        .contact-form {
+            margin: 0 auto;
+            max-width: 540px;
+            height: 313px;
+            
+            input {
+                width: 100%;
+                font-size: 13px;
+                text-transform: uppercase;
+                border: none;
+                border-bottom: 2px solid #a4a4a4;
+                padding-bottom: 15px;
+                background: $color-background2;
+                
+            }
+            
+             ::placeholder {
+                color: #9e9e9e;
+            }
+            
+            .message {
+                padding-top: 100px;
+            }
+            
+            .name, .email {
+                width: 255px;
+                padding-top: 23px;
+            }
+            
+            .name {
+                margin-right: 23px;
+            }
+            
+            .subject {
+                padding-top: 48px;
+            }
+        }
+        
+        button {
+            display: block;
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-bottom: 75px;
+        }
+    }
+    
+    .map {
+        background-image: url(../images/map.png);
+        background-repeat:no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        
+        .contact-box {
+            max-width: 580px;
+            background: $color-primary;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            padding-top: 54px;
+            padding-bottom: 68px;
+            margin-left: 263px;
+            
+            .box {
+                display: flex;
+                align-items: center;
+                
+                a {
+                    .far, .fas {
+                        color: $color-primary;
+                        background: $color-seventh;
+                        border-radius: 50%;
+                        width: 38px;
+                        height: 38px;
+                        line-height: 38px;
+                        text-align: center;
+                        margin-right: 16px;
+                        margin-left: 40px;
+                        margin-bottom: 11px;
+                            
+                        }
+                    }
+                
+                p {
+                    font-size: $fontSize-fourth;
+                    color: $color-fifth;
+                    font-weight: 300;
+                } 
             }
         }
     }
