@@ -213,15 +213,69 @@ header .menu-section {
       justify-content: space-between;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+}
+
+@media (max-width: 1340px) {
+  header .menu-section {
+    display: block;
+  }
+}
+
+header .menu-section label, header .menu-section #toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  color: #fff;
+}
+
+@media (max-width: 1340px) {
+  header .menu-section label, header .menu-section #toggle {
+    margin-right: 40px;
+    top: 10px;
+  }
+}
+
+header .menu-section label {
+  font-size: 26px;
+  color: #fff;
+}
+
+@media (max-width: 1340px) {
+  header .menu-section label {
+    display: block;
+    cursor: pointer;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1340px) {
+  header .menu-section #toggle:checked + ul {
+    display: block;
+  }
 }
 
 header .menu-section ul {
   list-style: none;
 }
 
+@media (max-width: 1340px) {
+  header .menu-section ul {
+    display: none;
+  }
+}
+
 header .menu-section ul li {
   display: inline-block;
   margin-right: 25px;
+}
+
+@media (max-width: 1340px) {
+  header .menu-section ul li {
+    display: block;
+    text-align: center;
+    margin-right: 0;
+  }
 }
 
 header .menu-section ul li a {
@@ -241,6 +295,12 @@ header .menu-section ul li a:after {
   margin: 0 auto;
   opacity: 0;
   transition-timing-function: 0.6s;
+}
+
+@media (max-width: 1340px) {
+  header .menu-section ul li a:after {
+    display: none;
+  }
 }
 
 header .menu-section ul li a:hover:after {
@@ -442,6 +502,10 @@ header .menu-section ul li a:hover:after {
 }
 
 .section-services .services {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
   padding-bottom: 42px;
 }
 
@@ -707,7 +771,11 @@ header .menu-section ul li a:hover:after {
   width: 350px;
   height: 430px;
   background: #fff;
-  margin: 0 20px 10px 20px;
+  margin: 0 20px 30px 20px;
+}
+
+.section-team .our-team .workers:last-of-type {
+  margin-bottom: 0;
 }
 
 .section-team .our-team .workers .workers-photo {

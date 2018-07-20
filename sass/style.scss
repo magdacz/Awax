@@ -116,7 +116,6 @@ $color-background2: #F7F7F7; /*jasno-szary*/
 
 }
 
-
     
 //PAGE
     
@@ -178,13 +177,59 @@ header {
         justify-content: space-between;
         padding-top: 20px;
         padding-bottom: 20px;
+        position: relative;
+        
+        @media(max-width: 1340px) {
+            display: block;
+        }  
+        
+        label, #toggle {
+            display: none;
+            position: absolute;
+            right: 0;
+            color: $color-primary;
+            
+            @media(max-width: 1340px) {
+                margin-right: 40px;
+                top: 10px;
+            }
+        }
+        
+        label {
+            font-size: 26px;
+            color: $color-primary;
+            
+            @media(max-width: 1340px) {
+                display: block;
+                cursor: pointer;
+                font-size: 36px;
+            }
+        }
+        
+            
+        #toggle:checked + ul {
+            @media(max-width: 1340px) {
+                display: block;
+            }   
+        }
         
         ul {
             list-style: none;
+            
+            
+            @media(max-width: 1340px) {
+                display: none;
+              }
 
             li {
                 display: inline-block;
                 margin-right: 25px;
+           
+                @media(max-width: 1340px) {
+                    display: block;
+                    text-align: center;
+                    margin-right: 0;
+                }
                 
                 a {
                     text-decoration: none;
@@ -192,7 +237,11 @@ header {
                     font-size: 14px;
                     font-weight: 700;
                     color: #fff;
-                     
+                
+                    @media(max-width: 996px) {
+                    
+                    }
+
                     &:after {
                         content: "";
                         height: 3px;
@@ -202,6 +251,10 @@ header {
                         margin: 0 auto;
                         opacity: 0;
                         transition-timing-function: 0.6s;
+                        
+                        @media(max-width: 1340px) {
+                                display: none;
+                            }
                     }
 
                     &:hover {
@@ -382,6 +435,8 @@ header {
     }
     
     .services {
+        display: flex;
+        justify-content: center;
         padding-bottom: 42px;
         
         .icons {
@@ -607,7 +662,11 @@ header {
             width: 350px;
             height: 430px;
             background: $color-primary;
-            margin: 0 20px 10px 20px;
+            margin: 0 20px 30px 20px;
+            
+            &:last-of-type {
+                margin-bottom: 0;
+            }
             
             
             .workers-photo {
