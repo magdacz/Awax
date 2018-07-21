@@ -284,6 +284,7 @@ header .menu-section ul li a {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
+  transition: 0.7s;
 }
 
 header .menu-section ul li a:after {
@@ -294,12 +295,18 @@ header .menu-section ul li a:after {
   display: block;
   margin: 0 auto;
   opacity: 0;
-  transition-timing-function: 0.6s;
+  transition: 0.6s;
 }
 
 @media (max-width: 1340px) {
   header .menu-section ul li a:after {
     display: none;
+  }
+}
+
+@media (max-width: 1340px) {
+  header .menu-section ul li a:hover {
+    color: #b88b58;
   }
 }
 
@@ -398,6 +405,18 @@ header .menu-section ul li a:hover:after {
   box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
   cursor: pointer;
   transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 992px) {
+  .section-about-us .telephone {
+    left: 85%;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-about-us .telephone {
+    left: 80%;
+  }
 }
 
 .section-about-us .telephone:hover {
@@ -510,9 +529,16 @@ header .menu-section ul li a:hover:after {
 }
 
 .section-services .services .icons {
-  border-left: 2px solid #3A3A3A;
-  border-top: none;
-  border-bottom: none;
+  padding: 0;
+}
+
+@media (max-width: 1404px) {
+  .section-services .services .icons {
+    position: relative;
+  }
+}
+
+.section-services .services .icons .icons-box {
   width: 281px;
   height: 212px;
   display: -ms-flexbox;
@@ -521,15 +547,23 @@ header .menu-section ul li a:hover:after {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  border: none;
+  border-left: 2px solid #3A3A3A;
 }
 
-.section-services .services .icons img {
+@media (max-width: 768px) {
+  .section-services .services .icons .icons-box {
+    margin: auto;
+  }
+}
+
+.section-services .services .icons .icons-box img {
   width: 62px;
   padding-top: 9px;
   padding-bottom: 37px;
 }
 
-.section-services .services .icons h2 {
+.section-services .services .icons .icons-box h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
@@ -537,14 +571,45 @@ header .menu-section ul li a:hover:after {
   color: #fff;
 }
 
-.section-services .services .icons p {
+.section-services .services .icons .icons-box p {
   text-align: center;
   font-size: 12px;
   line-height: 21px;
   color: #7e7e7e;
 }
 
-.section-services .services .support {
+@media (max-width: 1404px) {
+  .section-services .services .icons .quality, .section-services .services .icons .updates {
+    position: absolute;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-services .services .icons .quality, .section-services .services .icons .updates {
+    position: static;
+    border-right: 2px solid #3A3A3A;
+  }
+}
+
+@media (max-width: 1404px) {
+  .section-services .services .icons .design {
+    border-right: 2px solid #3A3A3A;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-services .services .icons .updates {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1404px) {
+  .section-services .services .icons .quality, .section-services .services .icons .design {
+    margin-bottom: 50px;
+  }
+}
+
+.section-services .services .icons .support {
   border-right: 2px solid #3A3A3A;
 }
 
@@ -591,6 +656,12 @@ header .menu-section ul li a:hover:after {
 @media (max-width: 768px) {
   .section-our-projects ul {
     width: 535px;
+  }
+}
+
+@media (max-width: 565px) {
+  .section-our-projects ul {
+    display: none;
   }
 }
 
@@ -1294,6 +1365,12 @@ header .menu-section ul li a:hover:after {
 .section-facts .tell-about-us {
   background: #fff;
   border-bottom: 1px solid #cfcfcf;
+}
+
+@media (max-width: 650px) {
+  .section-facts .tell-about-us {
+    display: none;
+  }
 }
 
 .section-facts .tell-about-us .tell-about {
