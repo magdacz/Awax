@@ -494,7 +494,27 @@ header .menu-section ul li a:hover:after {
 
 @media (max-width: 1135px) {
   .section-about-us .about-us .video {
+    margin-left: 0;
     margin: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-about-us .about-us .video {
+    height: auto;
+    width: auto;
+  }
+}
+
+.section-about-us .about-us .video iframe {
+  height: 275px;
+  width: 445px;
+}
+
+@media (max-width: 550px) {
+  .section-about-us .about-us .video iframe {
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -1224,7 +1244,15 @@ header .menu-section ul li a:hover:after {
 
 @media (max-width: 1220px) {
   .section-premium .premium img {
+    margin-right: 0;
     margin: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .section-premium .premium img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1653,6 +1681,12 @@ header .menu-section ul li a:hover:after {
   overflow: hidden;
 }
 
+@media (max-width: 800px) {
+  .section-contact .map {
+    padding-bottom: 20px;
+  }
+}
+
 .section-contact .map .contact-box {
   max-width: 580px;
   background: #fff;
@@ -1734,6 +1768,30 @@ footer .up {
 
 footer .up:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+  footer .up {
+    right: 88%;
+  }
+}
+
+@media (max-width: 650px) {
+  footer .up {
+    right: 85%;
+  }
+}
+
+@media (max-width: 560px) {
+  footer .up {
+    right: 82%;
+  }
+}
+
+@media (max-width: 1404px) {
+  footer .footer {
+    padding-top: 20px;
+  }
 }
 
 @media (max-width: 1404px) {
@@ -1869,6 +1927,14 @@ footer .footer .footer-row .social-content .subscribe {
   }
 }
 
+@media (max-width: 550px) {
+  footer .footer .footer-row .social-content .subscribe {
+    width: auto;
+    height: auto;
+    padding-bottom: 40px;
+  }
+}
+
 footer .footer .footer-row .social-content .subscribe input {
   background: inherit;
   font-size: 13px;
@@ -1884,6 +1950,14 @@ footer .footer .footer-row .social-content .subscribe input {
   margin-bottom: 25px;
   padding-top: 50px;
   padding-bottom: 16px;
+}
+
+@media (max-width: 550px) {
+  footer .footer .footer-row .social-content .subscribe input {
+    margin-left: 0;
+    margin-right: 0;
+    margin: auto;
+  }
 }
 
 footer .footer .footer-row .social-content .subscribe ::-webkit-input-placeholder {
@@ -1910,6 +1984,12 @@ footer .footer .footer-row .social-content .subscribe button:hover {
   background: rgba(0, 0, 0, 0);
   box-shadow: inset 0 0 0 3px #b88b58;
   color: #b88b58;
+}
+
+@media (max-width: 550px) {
+  footer .footer .footer-row .social-content .subscribe button {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 1404px) {

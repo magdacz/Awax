@@ -423,7 +423,23 @@ header {
             box-shadow: 0 13px 24px rgba(0, 0, 1, 0.42);
             
             @media(max-width: 1135px) {
+                margin-left: 0;
                 margin: auto;
+            }
+            
+            @media(max-width: 550px) {
+                height: auto;
+                width: auto;
+            }
+            
+            iframe {
+                height: 275px;
+                width: 445px;
+                
+                @media(max-width: 550px) {
+                    height: 100%;
+                    width: 100%;
+                }
             }
         }
         
@@ -1045,16 +1061,25 @@ header {
             flex-direction: column;
             
         }
-        
-        img {
+               
+       img {
             width: 445px;
             height: 378px;
-            margin-right: 60px;
+            margin-right: 60px; 
             
             @media(max-width: 1220px) {
-            margin: auto;
+                margin-right: 0;
+                margin: auto; 
+                // width: 100%;
+               // height: auto;
             }
-        }
+           
+           @media(max-width: 550px) {
+               width: 100%;
+               height: auto;
+           }
+        } 
+        
         
         .content-premium {
             
@@ -1442,6 +1467,11 @@ header {
         background-size: cover;
         overflow: hidden;
         
+        @media(max-width: 800px) {
+            padding-bottom: 20px;
+        }
+        
+        
         .contact-box {
             max-width: 580px;
             background: $color-primary;
@@ -1462,7 +1492,7 @@ header {
              @media(max-width: 650px) {
                 width: 70%;
             }
-            
+        
             .box {
                 display: flex;
                 align-items: center;
@@ -1519,10 +1549,26 @@ footer {
 
             &:hover {
                 transform: scale(1.1);
-            }  
+            }
+        
+         @media(max-width: 950px) {
+            right: 88%;
+        }
+        
+        @media(max-width: 650px) {
+            right: 85%;
+        }
+        
+        @media(max-width: 560px) {
+            right: 82%;
+        }
+        
     }
     
     .footer {
+         @media(max-width: 1404px) {
+            padding-top: 20px;
+        }
         
         .footer-row {
             @media(max-width: 1404px) {
@@ -1627,7 +1673,12 @@ footer {
 
                     @media(max-width: 1404px) {
                         margin: auto;
-    
+                    }
+                    
+                    @media(max-width: 550px) {
+                        width: auto;
+                        height: auto;
+                        padding-bottom: 40px;
                     }
 
                     input {
@@ -1645,6 +1696,12 @@ footer {
                         margin-bottom: 25px;
                         padding-top: 50px;
                         padding-bottom: 16px;
+                        
+                        @media(max-width: 550px) {
+                            margin-left: 0;
+                            margin-right: 0;
+                            margin: auto;
+                        }
                     }
 
                     ::placeholder {
@@ -1663,6 +1720,10 @@ footer {
                            box-shadow: inset 0 0 0 3px $color-second;
                            color: $color-second;
                         }
+                        
+                        @media(max-width: 550px) {
+                            margin-top: 30px;
+                        }                        
                     }
                 }
             }
