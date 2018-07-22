@@ -903,79 +903,120 @@ header {
         justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 52px;
-    
-        .price-box {
-            background: $color-primary;
-            width: 257px;
-            height: 343px;
-            margin-bottom: 10px;
-            margin-right: 27px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-            &:last-of-type {
-                margin-right: 0;
-            }
         
-            h3 {
-                font-weight: 400;
-                color: $color-background;
-                padding: 0;
-                padding-top: 33px;
-                padding-bottom: 15px;
-            }
+        .price-box {
+            padding: 0;
             
-            h1 {
-                padding: 0;
-            }
+            @media(max-width: 1404px) {
+                position: relative;
+                }
             
-            h4 {
-                @include headers;
-                font-size: $fontSize-fifth;
-                font-weight: 400;
-                color: $color-third;
-                padding-bottom: 15px;
-            }
-            
-            p {
-                font-size: $fontSize-fifth;
-                color: $color-fifth;
-                line-height: 13px;
-                margin:0;
+            .price-content {
+                background: $color-primary;
+                width: 257px;
+                height: 343px;
+                margin-bottom: 20px;
+                margin-right: 27px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 
-                &:after {
-                    content: "";
-                    height: 1px;
-                    width: 10px;
-                    background-color: $color-second;
-                    margin: auto;
-                    margin-top: 5px;
-                    margin-bottom: 5px;
-                    display:block;
+                @media(max-width: 1404px) {
+                   margin-right: 0; 
                 }
                 
-                &:last-of-type:after {
-                display: none;
-                }              
+                @media(max-width: 768px) {
+                    margin: auto;
+                    margin-bottom: 20px;
+                }
+                
+                h3 {
+                    font-weight: 400;
+                    color: $color-background;
+                    padding: 0;
+                    padding-top: 33px;
+                    padding-bottom: 15px;
+                }
+
+                h1 {
+                    padding: 0;
+                }
+
+                h4 {
+                    @include headers;
+                    font-size: $fontSize-fifth;
+                    font-weight: 400;
+                    color: $color-third;
+                    padding-bottom: 15px;
+                }
+
+                p {
+                    font-size: $fontSize-fifth;
+                    color: $color-fifth;
+                    line-height: 13px;
+                    margin:0;
+
+                    &:after {
+                        content: "";
+                        height: 1px;
+                        width: 10px;
+                        background-color: $color-second;
+                        margin: auto;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        display:block;
+                    }
+
+                    &:last-of-type:after {
+                    display: none;
+                    }              
+                }
+
+                .btn-price {
+                    text-transform: uppercase;
+                    background: #373737; 
+                    font-size: 12px;
+                    font-weight: 800;
+                    color: #fff;
+                    width: 129px;
+                    height: 45px;
+                    border: none;
+                    border-radius: 20px;
+                    pointer: cursor;
+                    margin-top: 26px;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background: #b88b58;
+                    }
+                }
             }
             
-            .btn-price {
-                text-transform: uppercase;
-                background: #373737; 
-                font-size: 12px;
-                font-weight: 800;
-                color: #fff;
-                width: 129px;
-                height: 45px;
-                border: none;
-                border-radius: 20px;
-                pointer: cursor;
-                margin-top: 26px;
-                transition: 0.5s;
+            .express, .luxe {
+                @media(max-width: 1404px) {
+                   position: absolute;
+                   right: 10px; 
+                }
                 
-                &:hover {
-                    background: #b88b58;
+                @media(max-width: 768px) {
+                    position: static;
+                }
+            }
+            
+            .premium, .standart {
+                @media(max-width: 1404px) {
+                    margin-left: 10px;   
+                }
+                
+                @media(max-width: 768px) {
+                    margin-left: 0;
+                    margin: auto;
+                }
+            }
+            
+            .standart {
+                @media(max-width: 768px) {
+                    margin-bottom: 20px;
                 }
             }
         }
