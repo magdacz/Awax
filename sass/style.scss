@@ -1180,51 +1180,99 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         justify-content: space-around;
+        padding-bottom: 81px;
         
-        .content-facts {
-            text-align: center;
-             width: 186px;
+        
+        .facts-box {
+            padding: 0;
+            padding-left: 70px;
+            padding-right: 70px;
             height: 171px;
-            position: relative;
-            margin-bottom: 81px;
-            margin-right: 100px;
-            
-            &:last-of-type {
-                margin-right: 0;
-            }
-            
-            h1 {
-                color: $color-second;
-                font-size: 48px;
-                font-weight: 700;
+           
+            @media(max-width:1404px) {
                 padding: 0;
+                position: relative;
+            }
+            
+            .content-facts {
+                text-align: center;
+                width: 186px;
+                height: 171px;
+                position: relative;
+                margin-bottom: 81px;
+                
+                h1 {
+                    color: $color-second;
+                    font-size: 48px;
+                    font-weight: 700;
+                    padding: 0;
 
-                &:after {
-                        content: "";
-                        height: 3px;
-                        width: 20px;
-                        background-color: $color-fifth;
-                        margin: auto;
-                        margin-top: 3px;
-                        margin-bottom: 5px;
-                        display:block;
-                    }
+                    &:after {
+                            content: "";
+                            height: 3px;
+                            width: 20px;
+                            background-color: $color-fifth;
+                            margin: auto;
+                            margin-top: 3px;
+                            margin-bottom: 5px;
+                            display:block;
+                        }
+                }
+
+                h2 {
+                    @include headers;
+                    font-size: $fontSize-third;
+                    color: $color-primary;
+                }
+
+                p {
+                    font-size: $fontSize-fourth;
+                    line-height: 21px;
+                    color: $color-fifth;
+                    bottom: 5px;
+                    position: absolute;
+                }
             }
             
-            h2 {
-                @include headers;
-                font-size: $fontSize-third;
-                color: $color-primary;
+            .design-projects, .marketing {
+                @media(max-width:1404px) {
+                    position: absolute;
+                    right: 50px;
+                }
+                
+                @media(max-width: 768px) {
+                    right: 0;
+                    margin: auto;
+                    position: inherit;
+    
+                }
             }
             
-            p {
-                font-size: $fontSize-fourth;
-                line-height: 21px;
-                color: $color-fifth;
-                bottom: 5px;
-                position: absolute;
+            .design-photos, .exhibitions {
+                @media(max-width:1404px) {
+                    margin-left: 50px;
+                } 
+                
+                @media(max-width: 768px) {
+                    margin-left: 0;
+                    margin: auto;
+                }
+            }
+            
             }
         }
+        
+          .projects, .photos {
+                @media(max-width:1404px) {
+                    margin-bottom: 40px;
+                }
+            }
+    
+          .marketing-ideas {
+                @media(max-width: 768px) {
+                    margin-bottom: 40px;
+                } 
+    
     }
     
     .tell-about-us {

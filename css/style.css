@@ -1365,29 +1365,39 @@ header .menu-section ul li a:hover:after {
       justify-content: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-bottom: 81px;
 }
 
-.section-facts .facts .content-facts {
+.section-facts .facts .facts-box {
+  padding: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 171px;
+}
+
+@media (max-width: 1404px) {
+  .section-facts .facts .facts-box {
+    padding: 0;
+    position: relative;
+  }
+}
+
+.section-facts .facts .facts-box .content-facts {
   text-align: center;
   width: 186px;
   height: 171px;
   position: relative;
   margin-bottom: 81px;
-  margin-right: 100px;
 }
 
-.section-facts .facts .content-facts:last-of-type {
-  margin-right: 0;
-}
-
-.section-facts .facts .content-facts h1 {
+.section-facts .facts .facts-box .content-facts h1 {
   color: #b88b58;
   font-size: 48px;
   font-weight: 700;
   padding: 0;
 }
 
-.section-facts .facts .content-facts h1:after {
+.section-facts .facts .facts-box .content-facts h1:after {
   content: "";
   height: 3px;
   width: 20px;
@@ -1398,19 +1408,59 @@ header .menu-section ul li a:hover:after {
   display: block;
 }
 
-.section-facts .facts .content-facts h2 {
+.section-facts .facts .facts-box .content-facts h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
   color: #fff;
 }
 
-.section-facts .facts .content-facts p {
+.section-facts .facts .facts-box .content-facts p {
   font-size: 12px;
   line-height: 21px;
   color: #7e7e7e;
   bottom: 5px;
   position: absolute;
+}
+
+@media (max-width: 1404px) {
+  .section-facts .facts .facts-box .design-projects, .section-facts .facts .facts-box .marketing {
+    position: absolute;
+    right: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-facts .facts .facts-box .design-projects, .section-facts .facts .facts-box .marketing {
+    right: 0;
+    margin: auto;
+    position: inherit;
+  }
+}
+
+@media (max-width: 1404px) {
+  .section-facts .facts .facts-box .design-photos, .section-facts .facts .facts-box .exhibitions {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-facts .facts .facts-box .design-photos, .section-facts .facts .facts-box .exhibitions {
+    margin-left: 0;
+    margin: auto;
+  }
+}
+
+@media (max-width: 1404px) {
+  .section-facts .projects, .section-facts .photos {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-facts .marketing-ideas {
+    margin-bottom: 40px;
+  }
 }
 
 .section-facts .tell-about-us {
