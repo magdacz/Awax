@@ -166,6 +166,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+input {
+    outline: none;
+}
+
 /*HEADER*/
 
 header {
@@ -965,27 +969,31 @@ header {
                     color: $color-third;
                     padding-bottom: 15px;
                 }
+                
+                ul {
+                list-style: none;
+                
+                   li {
+                        font-size: $fontSize-fifth;
+                        color: $color-fifth;
+                        line-height: 13px;
+                        text-align: center;
 
-                p {
-                    font-size: $fontSize-fifth;
-                    color: $color-fifth;
-                    line-height: 13px;
-                    margin:0;
+                        &:after {
+                            content: "";
+                            height: 1px;
+                            width: 10px;
+                            background-color: $color-second;
+                            margin: auto;
+                            margin-top: 5px;
+                            margin-bottom: 5px;
+                            display:block;
+                        }
 
-                    &:after {
-                        content: "";
-                        height: 1px;
-                        width: 10px;
-                        background-color: $color-second;
-                        margin: auto;
-                        margin-top: 5px;
-                        margin-bottom: 5px;
-                        display:block;
+                        &:last-of-type:after {
+                        display: none;
+                        }              
                     }
-
-                    &:last-of-type:after {
-                    display: none;
-                    }              
                 }
 
                 .btn-price {

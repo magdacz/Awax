@@ -199,6 +199,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+input {
+  outline: none;
+}
+
 /*HEADER*/
 header {
   background: #000000;
@@ -1128,14 +1132,18 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 15px;
 }
 
-.section-price .price .price-box .price-content p {
+.section-price .price .price-box .price-content ul {
+  list-style: none;
+}
+
+.section-price .price .price-box .price-content ul li {
   font-size: 10px;
   color: #7e7e7e;
   line-height: 13px;
-  margin: 0;
+  text-align: center;
 }
 
-.section-price .price .price-box .price-content p:after {
+.section-price .price .price-box .price-content ul li:after {
   content: "";
   height: 1px;
   width: 10px;
@@ -1146,7 +1154,7 @@ header .menu-section ul li a:hover:after {
   display: block;
 }
 
-.section-price .price .price-box .price-content p:last-of-type:after {
+.section-price .price .price-box .price-content ul li:last-of-type:after {
   display: none;
 }
 
