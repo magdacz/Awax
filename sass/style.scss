@@ -54,20 +54,27 @@ $color-background2: #F7F7F7; /*jasno-szary*/
 }
 
 /*GRID*/
-
+/*
  [class*="col-"] {
  	float: left;
  	min-height: 1px;
  	padding: 12px;
  }
+ */
 
+/*
  .row::before,
  .row::after {
  	content: "";
  	display: table;
  	clear: both;
  }
- 
+ */
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+ }
 
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
