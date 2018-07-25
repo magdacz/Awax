@@ -7,10 +7,7 @@ $fontSize-second: 14px;
 $fontSize-third: 18px;
 $fontSize-fourth: 12px;
 $fontSize-fifth: 10px;
-/*
-$fontSize-third: 
-$fontSize-fourth: 
-$fontSize-fifth: */
+
 
 $color-primary: #fff;
 $color-second: #b88b58;
@@ -201,7 +198,6 @@ header {
             color: $color-primary;
             
             @media(max-width: 1340px) {
-                margin-right: 40px;
                 top: 10px;
             }
         }
@@ -320,6 +316,16 @@ header {
             @media(max-width: 768px) {
                 font-size: 42px;
             }
+            
+            @media(max-width: 440px) {
+                font-size: 30px;
+                 line-height: 49px;
+            }
+            
+            @media(max-width: 310px) {
+                font-size: 25px;
+                line-height: 39px;
+            }
         }
         
         h2 {
@@ -332,6 +338,14 @@ header {
             
             @media(max-width: 768px) {
                 font-size: 20px;
+            }
+            
+            @media(max-width: 440px) {
+                font-size: 18px;
+            }
+            
+            @media(max-width: 310px) {
+                font-size: 16px;
             }
     
         }
@@ -375,6 +389,14 @@ header {
         @media(max-width: 650px) {
             left: 80%;
         }
+        
+        @media(max-width: 400px) {
+            left: 75%;    
+        }
+        
+        @media(max-width: 320px) {
+            left: 72%;    
+        }
 
             &:hover {
                 transform: scale(1.1);
@@ -385,7 +407,7 @@ header {
         @include header1;
     }
     
-     h3 {
+    h3 {
         @include header3;
     }
     
@@ -477,7 +499,6 @@ header {
         
         .icons {
             padding: 0;
-            //border: 1px solid gold;
             
             @media(max-width: 1404px) {
                 position: relative;
@@ -495,6 +516,7 @@ header {
                 
                 @media(max-width: 768px) {
                     margin: auto;
+                    border: none;
                 }
                 
                 img {
@@ -526,7 +548,6 @@ header {
                 
                 @media(max-width: 768px) {
                     position: static;
-                    border-right: 2px solid #3A3A3A
                 }
             }
                 
@@ -534,6 +555,9 @@ header {
                 @media(max-width: 1404px) {
                     border-right: 2px solid #3A3A3A;
                     
+                    @media(max-width: 768px) {
+                    border-right: none;
+                    } 
                 }
             }
             
@@ -546,12 +570,15 @@ header {
             .quality, .design {
                  @media(max-width: 1404px) {
                     margin-bottom: 50px;
-                    
                 }
             }
             
             .support {
                 border-right: 2px solid #3A3A3A;
+                
+                @media(max-width: 768px) {
+                    border-right: none;
+                }
             } 
         }
     }
@@ -661,6 +688,10 @@ header {
             height: 165px;
             position: relative;
             margin: 15px;
+            
+            @media(max-width: 768px) {
+                margin-bottom: 105px;
+            }
         
             .layer {
                 width: 255px;
@@ -673,6 +704,12 @@ header {
                 justify-content: center;
                 align-items: center;
                 
+                @media(max-width: 768px) {
+                    opacity: 1;
+                    background: none;
+                    top: 135px;
+                }
+                
                 .text-box {
                     width: 185px;
                 
@@ -680,6 +717,10 @@ header {
                         @include headers;
                         font-size: $fontSize-third;
                         color: $color-primary;
+                        
+                        @media(max-width: 768px) {
+                        color: $color-fifth;
+                        }
                     }
 
                     p {
@@ -688,6 +729,10 @@ header {
                         line-height: 21px;
                         text-align: center;
                         padding-top: 5px;
+                        
+                        @media(max-width: 768px) {
+                        color: $color-fifth;
+                        }
                     }
                 }
                 
@@ -795,6 +840,7 @@ header {
                margin: 0 auto;
                display: flex;
                justify-content: center;
+                padding-right: 5px;    
                 
                 a {
                     text-decoration: none;
@@ -1104,7 +1150,11 @@ header {
                 @media(max-width: 1220px) {
                         width: 50%;
                         margin: auto;
-                    }
+                }
+                
+                @media(max-width: 768px) {
+                    width: auto;
+                }
                 
                 .icon {
                     width: 34px;
@@ -1115,14 +1165,29 @@ header {
                         margin-top: 0;
                         margin-left: 0;
                     }
+                    
+                    @media(max-width: 768px) {
+                        display: none;
+                    }
                 }
                 
                 .text-premium {
                     max-width: 470px;
+                    
+                    @media(max-width: 768px) {
+                        max-width: auto;
+                        margin: auto;
+                    }
+                        
+                    
                     h2 {
                         text-transform: uppercase;
                         font-size: 21px;
                         color: $color-fourth;
+                        
+                        @media(max-width: 768px) {
+                            text-align: center;
+                        }
                         
                     }
                     
@@ -1130,6 +1195,10 @@ header {
                         font-size: $fontSize-second;
                         color: $color-sixth;
                         line-height: 25px;
+                        
+                        @media(max-width: 768px) {
+                            text-align: center;
+                        }
                     }
                     
                     .uppercase {
@@ -1507,6 +1576,10 @@ header {
              @media(max-width: 650px) {
                 width: 70%;
             }
+            
+            @media(max-width: 400px) {
+                width: 85%;    
+            }
         
             .box {
                 display: flex;
@@ -1517,6 +1590,10 @@ header {
                 }
                 
                 a {
+                    padding-bottom: 5px;
+                    padding-top: 5px;
+                    
+                    
                     .far, .fas {
                         color: $color-primary;
                         background: $color-seventh;
@@ -1527,10 +1604,14 @@ header {
                         text-align: center;
                         margin-right: 16px;
                         margin-left: 40px;
-                        margin-bottom: 11px;
-                            
+                        
+                        @media(max-width: 400px) {
+                        margin-left: 15px;    
                         }
+                            
                     }
+                    
+                }
                 
                 p {
                     font-size: $fontSize-fourth;
@@ -1578,6 +1659,13 @@ footer {
             right: 82%;
         }
         
+        @media(max-width: 420px) {
+            right: 80%;    
+        }
+        
+        @media(max-width: 360px) {
+            right: 75%;    
+        }
     }
     
     .footer {
@@ -1622,6 +1710,11 @@ footer {
                         @media(max-width: 580px) {
                             padding-bottom: 20px;
                         }
+                        
+                         @media(max-width: 400px) {
+                             padding-bottom: 10px;
+                    
+                        }
     
                            a {
                             text-decoration: none;
@@ -1639,6 +1732,10 @@ footer {
 
                                 &:hover {
                                     background: $color-second;
+                                }
+                                
+                                @media(max-width: 400px) {
+                                    margin-bottom: 10px;
                                 }
                             }
                         }
@@ -1752,9 +1849,6 @@ footer {
                     padding-top: 20px;
                 }
                 
-                @media(max-width: 580px) {
-                    
-                }
             }
             
             .paragraph {
