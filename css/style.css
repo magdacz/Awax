@@ -1,9 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
-/*
-$fontSize-third: 
-$fontSize-fourth: 
-$fontSize-fifth: */
 /*szary pod nagłówkami w sekcjach*/
 /*kolor tekstu about us*/
 /*price table text*/
@@ -481,7 +477,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 10px;
 }
 
-.section-about-us h3 {
+.section-about-us h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -582,7 +578,7 @@ header .menu-section ul li a:hover:after {
   color: #fff;
 }
 
-.section-services h3 {
+.section-services h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -634,7 +630,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 37px;
 }
 
-.section-services .services .icons .icons-box h2 {
+.section-services .services .icons .icons-box h3 {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
@@ -709,7 +705,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 10px;
 }
 
-.section-our-projects h3 {
+.section-our-projects h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -860,7 +856,7 @@ header .menu-section ul li a:hover:after {
   width: 185px;
 }
 
-.section-our-projects .photos .image .layer .text-box h2 {
+.section-our-projects .photos .image .layer .text-box h3 {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
@@ -868,7 +864,7 @@ header .menu-section ul li a:hover:after {
 }
 
 @media (max-width: 768px) {
-  .section-our-projects .photos .image .layer .text-box h2 {
+  .section-our-projects .photos .image .layer .text-box h3 {
     color: #7e7e7e;
   }
 }
@@ -883,7 +879,7 @@ header .menu-section ul li a:hover:after {
 
 @media (max-width: 768px) {
   .section-our-projects .photos .image .layer .text-box p {
-    color: #7e7e7e;
+    color: #242424;
   }
 }
 
@@ -922,7 +918,7 @@ header .menu-section ul li a:hover:after {
   color: #fff;
 }
 
-.section-team h3 {
+.section-team h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -984,15 +980,16 @@ header .menu-section ul li a:hover:after {
   background-position: center;
 }
 
-.section-team .our-team .workers h2 {
+.section-team .our-team .workers h3 {
   text-transform: uppercase;
   text-align: center;
+  font-size: 21px;
 }
 
 .section-team .our-team .workers p {
   text-align: center;
   font-size: 14px;
-  color: #7e7e7e;
+  color: #242424;
   padding-top: 5px;
   padding-bottom: 38px;
 }
@@ -1040,7 +1037,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 10px;
 }
 
-.section-happy-clients h3 {
+.section-happy-clients h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -1069,12 +1066,13 @@ header .menu-section ul li a:hover:after {
   margin-bottom: 29px;
 }
 
-.section-happy-clients .clients h2 {
+.section-happy-clients .clients h3 {
   text-transform: uppercase;
   text-align: center;
+  font-size: 24px;
 }
 
-.section-happy-clients .clients h3 {
+.section-happy-clients .clients h4 {
   text-transform: none;
   font-size: 18px;
   color: #000000;
@@ -1082,7 +1080,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 0;
 }
 
-.section-happy-clients .clients h3 span {
+.section-happy-clients .clients h4 span {
   text-transform: uppercase;
 }
 
@@ -1141,7 +1139,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 10px;
 }
 
-.section-price h3 {
+.section-price h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -1197,18 +1195,22 @@ header .menu-section ul li a:hover:after {
 }
 
 .section-price .price .price-box .price-content h3 {
+  font-size: 14px;
   font-weight: 400;
-  color: #000000;
+  text-transform: uppercase;
+  color: #242424;
   padding: 0;
   padding-top: 33px;
   padding-bottom: 15px;
 }
 
-.section-price .price .price-box .price-content h1 {
+.section-price .price .price-box .price-content h4 {
   padding: 0;
+  font-size: 30px;
+  color: #242424;
 }
 
-.section-price .price .price-box .price-content h4 {
+.section-price .price .price-box .price-content h5 {
   text-transform: uppercase;
   text-align: center;
   font-size: 10px;
@@ -1308,7 +1310,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 10px;
 }
 
-.section-premium h3 {
+.section-premium h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -1397,14 +1399,14 @@ header .menu-section ul li a:hover:after {
   }
 }
 
-.section-premium .premium .content-premium .feature .text-premium h2 {
+.section-premium .premium .content-premium .feature .text-premium h3 {
   text-transform: uppercase;
   font-size: 21px;
   color: #242424;
 }
 
 @media (max-width: 768px) {
-  .section-premium .premium .content-premium .feature .text-premium h2 {
+  .section-premium .premium .content-premium .feature .text-premium h3 {
     text-align: center;
   }
 }
@@ -1500,7 +1502,7 @@ header .menu-section ul li a:hover:after {
   color: #fff;
 }
 
-.section-facts h3 {
+.section-facts h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;
@@ -1542,14 +1544,14 @@ header .menu-section ul li a:hover:after {
   margin-bottom: 81px;
 }
 
-.section-facts .facts .facts-box .content-facts h1 {
+.section-facts .facts .facts-box .content-facts h3 {
   color: #b88b58;
   font-size: 48px;
   font-weight: 700;
   padding: 0;
 }
 
-.section-facts .facts .facts-box .content-facts h1:after {
+.section-facts .facts .facts-box .content-facts h3:after {
   content: "";
   height: 3px;
   width: 20px;
@@ -1560,7 +1562,7 @@ header .menu-section ul li a:hover:after {
   display: block;
 }
 
-.section-facts .facts .facts-box .content-facts h2 {
+.section-facts .facts .facts-box .content-facts h4 {
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
@@ -1718,7 +1720,7 @@ header .menu-section ul li a:hover:after {
   padding-bottom: 10px;
 }
 
-.section-contact h3 {
+.section-contact h2 {
   text-transform: uppercase;
   text-align: center;
   font-size: 14px;

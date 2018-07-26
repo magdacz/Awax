@@ -43,7 +43,7 @@ $color-background2: #F7F7F7; /*jasno-szary*/
         color: $color-primary;
 }
 //szary
-@mixin header3 {
+@mixin subheading {
 		@include headers;
         font-size: $fontSize-second;
         color: $color-third;
@@ -407,8 +407,8 @@ header {
         @include header1;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .about-us {
@@ -488,8 +488,8 @@ header {
         @include header1b;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .services {
@@ -525,7 +525,7 @@ header {
                     padding-bottom: 37px;
                     }
             
-                h2 {
+                h3 {
                     @include headers;
                     font-size: $fontSize-third;
                     line-height: 24px;
@@ -594,8 +594,8 @@ header {
         @include header1;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     ul {
@@ -713,7 +713,7 @@ header {
                 .text-box {
                     width: 185px;
                 
-                    h2 {
+                    h3 {
                         @include headers;
                         font-size: $fontSize-third;
                         color: $color-primary;
@@ -731,7 +731,7 @@ header {
                         padding-top: 5px;
                         
                         @media(max-width: 768px) {
-                        color: $color-fifth;
+                        color: $color-fourth;
                         }
                     }
                 }
@@ -771,8 +771,8 @@ header {
         @include header1b;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .our-team {
@@ -823,14 +823,15 @@ header {
             background-position: center;
             }
             
-            h2 {
+            h3 {
                 @include headers;
+                font-size: 21px;
             }
             
             p {
                 text-align: center;
                 font-size: $fontSize-second;
-                color: $color-fifth;
+                color: $color-fourth;
                 padding-top: 5px;
                 padding-bottom: 38px;
                 
@@ -877,8 +878,8 @@ header {
         @include header1;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .clients {
@@ -899,11 +900,12 @@ header {
             margin-bottom: 29px;
         }
         
-        h2 {
+        h3 {
             @include headers;
+            font-size: 24px;
         }
         
-        h3 {
+        h4 {
             text-transform: none;
             font-size: $fontSize-third;
             color: $color-background;
@@ -967,8 +969,8 @@ header {
         @include header1;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .price {
@@ -1004,18 +1006,22 @@ header {
                 }
                 
                 h3 {
+                    font-size: $fontSize-second;
                     font-weight: 400;
-                    color: $color-background;
+                    text-transform: uppercase;
+                    color: $color-fourth;
                     padding: 0;
                     padding-top: 33px;
                     padding-bottom: 15px;
                 }
 
-                h1 {
+                h4 {
                     padding: 0;
+                    font-size: $fontSize-primary;
+                    color: $color-fourth;
                 }
 
-                h4 {
+                h5 {
                     @include headers;
                     font-size: $fontSize-fifth;
                     font-weight: 400;
@@ -1110,8 +1116,8 @@ header {
         @include header1;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .premium {
@@ -1180,7 +1186,7 @@ header {
                     }
                         
                     
-                    h2 {
+                    h3 {
                         text-transform: uppercase;
                         font-size: 21px;
                         color: $color-fourth;
@@ -1280,8 +1286,8 @@ header {
         @include header1b;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .facts {
@@ -1310,7 +1316,7 @@ header {
                 position: relative;
                 margin-bottom: 81px;
                 
-                h1 {
+                h3 {
                     color: $color-second;
                     font-size: 48px;
                     font-weight: 700;
@@ -1328,7 +1334,7 @@ header {
                         }
                 }
 
-                h2 {
+                h4 {
                     @include headers;
                     font-size: $fontSize-third;
                     color: $color-primary;
@@ -1476,8 +1482,8 @@ header {
         @include header1;
     }
     
-    h3 {
-        @include header3;
+    h2 {
+        @include subheading;
     }
     
     .contact {
