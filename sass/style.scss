@@ -146,26 +146,6 @@ $color-background2: #F7F7F7; /*jasno-szary*/
     cursor: pointer;
 }
 
-.pagination {
-        position: absolute; /*add position relative for section*/
-        bottom: 25px;
-        left: 50%;
-        transform: translateX(-50%);
-    
-        .circle {
-            width: 15px;
-            height: 15px;
-            margin: 4px;
-            border: 2px solid #b88b58;
-            border-radius: 50%;
-            display: inline-block;
-        }
-        
-         .active {
-                background: #b88b58;
-        }
-    }
-
 body { 
     font-family: 'Montserrat', sans-serif;
 }
@@ -995,6 +975,13 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                cursor: pointer;
+                transition: 0.5s;
+                
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+                }
                 
                 @media(max-width: 1404px) {
                    margin-right: 0; 
